@@ -198,3 +198,33 @@ img.responsive {
 
 
 
+/*gallery*/
+
+.image-gallery {
+    padding: 30px;
+    background-color: #d5c75f;
+}
+
+.image-gallery img.responsive {
+    width: 33%;
+}
+
+.blur {
+	filter: blur(10px); 
+}
+
+.grayscale {
+	filter: grayscale(100%)
+}
+
+.sepia {
+	filter: sepia(90%)
+}
+
+
+@media (max-width: 900px) { 
+	.image-gallery img.responsive {
+	    width: 100%;
+	}
+
+}
