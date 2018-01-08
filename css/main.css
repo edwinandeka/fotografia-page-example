@@ -8,7 +8,19 @@ html, body {
 	width: 900px;
 	padding: 30px;
 	margin: 0 auto;
+	position: relative;
+	top: 0px;
+    animation-duration: 1s;
+	animation-name: animation;
 }
+
+
+/* The animation code */
+@keyframes animation {
+    from {top: 1000px;}
+    to {top: 0px;}
+}
+
 
 .shadow {
 	box-shadow: 2px 2px 0px #02010a;
@@ -29,6 +41,7 @@ html, body {
 .trasnlate {
 	transition: .4s;
 }
+
 .trasnlate:hover {
 	transform: translate(20px, -5px);
 	transform: drop-shadow(16px 16px 10px #82c3a6);
@@ -154,46 +167,47 @@ img.responsive {
 
 @media (max-width: 900px) {
 
-.container {
-	width: 95%;
-	padding: 16px;
-}
+	.container {
+		width: 95%;
+		padding: 16px;
+	}
 
 
-.image-main {
-    width: calc(100% - 32px);
-	padding: 16px;
+	.image-main {
+	    width: calc(100% - 32px);
+		padding: 16px;
 
-}
+	}
 
-.image-secondary {
-    height: auto;
-    padding: 16px;
-    flex-direction: column;
-    align-items: center;
-}
+	.image-secondary {
+	    height: auto;
+	    padding: 16px;
+	    flex-direction: column;
+	    align-items: center;
+	}
 
-img.responsive {
-    width: calc(100% - 32px);
-    height: auto;
-}
-.image-secondary img.responsive {
-    width: calc(100% - 32px);
-    height: auto;
-}
+	img.responsive {
+	    width: calc(100% - 32px);
+	    height: auto;
+	}
+	.image-secondary img.responsive {
+	    width: calc(100% - 32px);
+	    height: auto;
+	}
 
-.column {
-    width: calc(100% - 32px);
-}
+	.column {
+	    width: calc(100% - 32px);
+	}
 
-.header-nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+	.header-nav {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	}
 
-.title-app {
-	font-size: 38px;
+	.title-app {
+		font-size: 38px;
+	}
 }
 
 
@@ -205,9 +219,13 @@ img.responsive {
     background-color: #d5c75f;
 }
 
+
+
+
 .image-gallery img.responsive {
     width: 33%;
 }
+
 
 .blur {
 	filter: blur(10px); 
